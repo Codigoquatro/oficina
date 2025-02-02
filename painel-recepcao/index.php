@@ -41,7 +41,7 @@ $menu11 = "retornos";
     <meta name="description" content="">
     <meta name="author" content="CodigoQuatro">
 
-    <title>Painel Recepção</title>
+    <title>Painel de Atendimento</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -74,7 +74,7 @@ $menu11 = "retornos";
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
 
-                <div class="sidebar-brand-text mx-3">Recepcionista</div>
+                <div class="sidebar-brand-text mx-3">Atendimento</div>
             </a>
 
             <!-- Divider -->
@@ -165,7 +165,7 @@ $menu11 = "retornos";
             <li class="nav-item">
                     <a class="nav-link" href="../painel-mecanico/">
                         <i class="fas fa-coins fa-chart-area"></i>
-                        <span class="">Painel Mecânico</span>
+                        <span class="">Painel de Operações</span>
                     </a>
             </li>
 

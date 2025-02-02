@@ -39,7 +39,7 @@ $menu4 = "relComissao";
     <meta name="description" content="">
     <meta name="author" content="Hugo Vasconcelos">
 
-    <title>Painel Mecânico</title>
+    <title>Painel Operacional</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -72,7 +72,7 @@ $menu4 = "relComissao";
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
 
-                <div class="sidebar-brand-text mx-3">Mecânico</div>
+                <div class="sidebar-brand-text mx-3">Operacional</div>
             </a>
 
             <!-- Divider -->
@@ -114,22 +114,22 @@ $menu4 = "relComissao";
 
 
                     <!-- Nav Item - Charts -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php?pag=<?php echo $menu3 ?>">
+                        <li class="nav-item">
+                        <!-- <a class="nav-link" href="index.php?pag=<?php echo $menu3 ?>">
                             <i class="fas fa-dollar-sign fa-chart-area"></i>
                             <span class="">Comissões</span></a>
-                        </li>
+                        </li>-->
 
-                           <li class="nav-item">
+                         <!--  <li class="nav-item">
                             <a class="nav-link" href="" data-toggle="modal" data-target="#ModalRelComissao">
                                 <i class="fas fa-coins fa-chart-area"></i>
                                 <span class="">Relatório Comissão</span></a>
 
-                            </li>
+                            </li>-->
                             <li class="nav-item">
                                 <a class="nav-link" href="../painel-recepcao/">
                                     <i class="fas fa-coins fa-chart-area"></i>
-                                    <span class="">Painel Recepção</span>
+                                    <span class="">Painel Atendimento</span>
                                 </a>
                             </li>
                             <!-- Nav Item - Tables -->

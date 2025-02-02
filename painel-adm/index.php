@@ -217,7 +217,7 @@ if($nivel_est > 0){
                 <li class="nav-item">
                     <a class="nav-link" href="../painel-recepcao">
                         <i class="fas fa-coins fa-chart-area"></i>
-                        <span class="">Painel Recepção</span>
+                        <span class="">Painel Atendimento</span>
                     </a>
                 </li>
                 <li class="nav-item">

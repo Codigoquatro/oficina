@@ -30,7 +30,7 @@ $varios_serv = '';
 					<tr>
 						<th>Cliente</th>
 						<th>Veículo</th>
-						<th>Valor</th>
+						<th>Valor(Mão de Obra)</th>
 						<th>Serviço</th>
 						<th>Data</th>
 						<th>Mecânico</th>

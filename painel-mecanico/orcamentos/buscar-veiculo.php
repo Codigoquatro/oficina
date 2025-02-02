@@ -1,36 +1,37 @@
-<?php 
-require_once("../../conexao.php"); 
+<?php
+require_once("../../conexao.php");
 
-$cpf = $_POST['cpf'];
-$veiculo = $_POST['veiculo'];
+if (isset($_POST['cpf'])) {
+    $cpf = $_POST['cpf'];
+    $veiculo = isset($_POST['veiculo']) ? $_POST['veiculo'] : '';
 
-$query = $pdo->query("SELECT * FROM clientes where cpf = '$cpf'");
-$res = $query->fetchAll(PDO::FETCH_ASSOC);
-if(@count($res) == 0){
-	echo 'O cliente não existe, CPF Incorreto';
-	exit();
+    // Verifica se o CPF existe na tabela de clientes
+    $query = $pdo->query("SELECT * FROM clientes WHERE cpf = '$cpf'");
+    $res = $query->fetchAll(PDO::FETCH_ASSOC);
+
+    if (count($res) == 0) {
+        echo 'O cliente não existe, CPF Incorreto';
+        exit();
+    }
+
+    // Se o cliente existe, retorna os veículos
+    echo '<select name="veiculo" class="form-control" id="veiculo">';
+
+    $query = $pdo->query("SELECT * FROM veiculos WHERE cliente = '$cpf' ORDER BY id DESC");
+    $res = $query->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($res as $veiculo_data) {
+        $nome_reg = $veiculo_data['marca'] . ' - ' . $veiculo_data['modelo'];
+        $id_reg = $veiculo_data['id'];
+
+        // Se o veículo for o selecionado, marca como selected
+        $selected = ($veiculo == $id_reg) ? 'selected' : '';
+
+        echo '<option value="' . $id_reg . '" ' . $selected . '>' . $nome_reg . '</option>';
+    }
+
+    echo '</select>';
+} else {
+    echo 'CPF não enviado';
 }
-
-echo '<select name="veiculo" class="form-control" id="veiculo">';
-
-$query = $pdo->query("SELECT * FROM veiculos where cliente = '$cpf' order by id desc ");
-$res = $query->fetchAll(PDO::FETCH_ASSOC);
-
-for ($i=0; $i < @count($res); $i++) { 
-	foreach ($res[$i] as $key => $value) {
-	}
-	$nome_reg = $res[$i]['marca'] . ' - ' . $res[$i]['modelo'];
-	$id_reg = $res[$i]['id'];
-	
-	if(@$veiculo == $id_reg){
-		$selected = 'selected';
-	}else{
-		$selected = '';
-	}
-
-	echo '<option value=" '.$id_reg. '" '.$selected.'>'.$nome_reg.'</option>';
- } 
-
-echo '</select>';
-
 ?>
