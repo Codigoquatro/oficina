@@ -39,7 +39,7 @@ $menu11 = "retornos";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Hugo Vasconcelos">
+    <meta name="author" content="CodigoQuatro">
 
     <title>Painel Recepção</title>
 
@@ -156,8 +156,18 @@ $menu11 = "retornos";
                 </div>
             </li>
 
-
-
+            <li class="nav-item">
+                    <a class="nav-link" href="../painel-adm/">
+                        <i class="fas fa-coins fa-chart-area"></i>
+                        <span class="">Painel Admin</span>
+                    </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="../painel-mecanico/">
+                        <i class="fas fa-coins fa-chart-area"></i>
+                        <span class="">Painel Mecânico</span>
+                    </a>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRel" aria-expanded="true" aria-controls="collapseUtilities">

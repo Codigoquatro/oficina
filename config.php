@@ -1,6 +1,6 @@
 <?php 
 
-$nome_oficina = "Oficina";
+$nome_oficina = "Soft Oficina";
 
 $url = "https://$_SERVER[HTTP_HOST]/";
 $ur = explode("//", $url);
@@ -9,16 +9,16 @@ if($ur[1] == 'codigoquatro.com.br/'){
 }
 
 
-$endereco_oficina = "Rua Alameda Campos, 157, Maranguape Ceara";
-$telefone_oficina = "(99) 9999-9999";
+$endereco_oficina = "Rua Alameda Campos, 157, Belo Horizonte";
+$telefone_oficina = "(85)99623-6816";
 $email_adm = 'codigoquatro2022@gmail.com';
-$rodape_relatorios = "Desenvolvido por CodigoQuatro";
+$rodape_relatorios = "CodigoQuatro - Soluções";
 
 //VARIAVEIS DO BANCO DE DADOS LOCAL
-//$servidor = 'localhost';
-//$usuario = 'root';
-//$senha = '';
-//$banco = 'oficina';
+$servidor = 'localhost';
+$usuario = 'root';
+$senha = '';
+$banco = 'oficina';
 
 //VARIAVEIS DO BANCO DE DADOS HOSPEDAGEM
 $servidor = '108.167.151.55';
@@ -32,7 +32,7 @@ $banco = 'codig267_oficina';
 
 //A PARTIR DE X PRODUTOS O NIVEL DO ESTOQUE ESTARÁ BAIXO
 $nivel_estoque = 5;
-$desconto_orc = 'Não';
+$desconto_orc = 'Sim';
 $valor_desconto = 5; //VALOR EM PORCENTAGEM, POR EXEMPLO 5 VAI SER 5 % SOBRE O VALOR FINAL
 $validade_orcamento_dias = 5; //5 DIAS PARA VALIDADE DO ORÇAMENTO
 $excluir_orcamento_dias = 15; //APÓS 15 DIAS O ORÇAMENTO QUE NÃO FOR APROVADO PELO CLIENTE SERÁ EXCLUÍDO

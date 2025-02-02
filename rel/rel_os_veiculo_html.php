@@ -31,6 +31,8 @@ $email_cli = $res_cli[0]['email'];
 <html>
 <head>
 	<title>Serviços do Veículo - <?php echo $marca ?></title>
+	<link rel="shortcut icon" href="img/logo-favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/logo-favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<style>

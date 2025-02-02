@@ -214,10 +214,17 @@ if($nivel_est > 0){
                 </div>
             </li>
 
-             <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="../painel-recepcao">
+                <li class="nav-item">
+                    <a class="nav-link" href="../painel-recepcao">
                         <i class="fas fa-coins fa-chart-area"></i>
-                        <span class="">Painel Recepção</span></a>
+                        <span class="">Painel Recepção</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../painel-mecanico/">
+                        <i class="fas fa-coins fa-chart-area"></i>
+                        <span class="">Painel Mecânico</span>
+                    </a>
                 </li>
 
                 <!-- Sidebar Toggler (Sidebar) -->

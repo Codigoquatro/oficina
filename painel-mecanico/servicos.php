@@ -1,8 +1,9 @@
 <?php 
 @session_start();
-if(@$_SESSION['nivel_usuario'] == null || @$_SESSION['nivel_usuario'] != 'mecanico'){
-	echo "<script language='javascript'> window.location='../index.php' </script>";
+if (!isset($_SESSION['nivel_usuario']) || ($_SESSION['nivel_usuario'] != 'mecanico' && $_SESSION['nivel_usuario'] != 'admin')) {
+    echo "<script language='javascript'> window.location='../index.php' </script>";
 }
+
 
 $pag = "servicos";
 require_once("../conexao.php"); 

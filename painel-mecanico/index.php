@@ -1,9 +1,10 @@
 <?php 
 require_once("../conexao.php");
 @session_start();
-if(@$_SESSION['nivel_usuario'] == null || @$_SESSION['nivel_usuario'] != 'mecanico'){
+if (!isset($_SESSION['nivel_usuario']) || ($_SESSION['nivel_usuario'] != 'mecanico' && $_SESSION['nivel_usuario'] != 'admin')) {
     echo "<script language='javascript'> window.location='../index.php' </script>";
 }
+
 
 
 //RECUPERAR DADOS DO USUÁRIO
@@ -119,13 +120,18 @@ $menu4 = "relComissao";
                             <span class="">Comissões</span></a>
                         </li>
 
-                        <li class="nav-item">
+                           <li class="nav-item">
                             <a class="nav-link" href="" data-toggle="modal" data-target="#ModalRelComissao">
                                 <i class="fas fa-coins fa-chart-area"></i>
                                 <span class="">Relatório Comissão</span></a>
 
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="../painel-recepcao/">
+                                    <i class="fas fa-coins fa-chart-area"></i>
+                                    <span class="">Painel Recepção</span>
+                                </a>
+                            </li>
                             <!-- Nav Item - Tables -->
 
 
